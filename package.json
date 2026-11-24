@@ -1,0 +1,12 @@
+{
+  "name": "fut-7-football-news",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Agregador de feeds RSS oficiais para o portal FUT-7",
+  "scripts": {
+    "update-news": "node scripts/update-news.js"
+  },
+  "dependencies": {
+    "rss-parser": "^3.13.0"
+  }
+}

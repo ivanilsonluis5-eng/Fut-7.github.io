@@ -1,0 +1,26 @@
+[
+  {
+    "name": "FIFA",
+    "url": "https://www.fifa.com/rss-feeds",
+    "feed": "https://www.fifa.com/rss-feeds",
+    "category": "official",
+    "enabled": false,
+    "note": "A página de feeds da FIFA deve ser consultada para obter o endereço RSS ativo."
+  },
+  {
+    "name": "UEFA",
+    "url": "https://www.uefa.com/news-media/",
+    "feed": "https://www.uefa.com/news-media/",
+    "category": "competitions",
+    "enabled": false,
+    "note": "Confirmar um feed RSS oficial disponível antes de ativar."
+  },
+  {
+    "name": "Premier League",
+    "url": "https://www.premierleague.com/news",
+    "feed": "https://www.premierleague.com/news",
+    "category": "competitions",
+    "enabled": false,
+    "note": "Ativar apenas quando existir um endpoint RSS oficial documentado."
+  }
+]

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="FUT-7 — notícias de futebol, resultados e transferências com fontes oficiais.">
+  <meta name="theme-color" content="#101713"><title>FUT-7 | Futebol em destaque</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="./" aria-label="FUT-7 início">CHAPA <span>7</span></a>
+  <nav class="desktop-nav" aria-label="Navegação">
+    <a href="#inicio" data-i18n="home">Início</a><a href="#noticias" data-i18n="news">Notícias</a><a href="#competic
+oes" data-i18n="competitions">Competições</a><a href="#sobre" data-i18n="about">Sobre</a>
+  </nav>
+  <div class="header-actions">
+    <label class="language-label" for="language">🌐</label><select id="language" aria-label="Idioma"><option value="pt">PT</option><option value="en">EN</option><option value="es">ES</option><option value="it">IT</option></select>
+    <button id="themeToggle" class="icon-btn" aria-label="Alternar tema">◐</button>
+    <button id="menuToggle" class="icon-btn mobile-only" aria-label="Abrir menu">☰</button>
+  </div>
+</header>
+<main>
+  <section class="ticker"><span class="live-dot"></span><strong data-i18n="latest">ÚLTIMAS</strong><span id="tickerText">FUT-7 — informação de futebol com fontes identificadas.</span></section>
+  <section class="hero" id="inicio">
+    <div class="hero-copy"><span class="eyebrow" data-i18n="footballFirst">FUTEBOL EM PRIMEIRO LUGAR</span><h1 data-i18n="heroTitle">O jogo não para.<br><em>A informação também não.</em></h1><p data-i18n="heroText">Notícias, competições e atualizações do futebol mundial, com origem e contexto.</p><a class="primary-btn" href="#noticias" data-i18n="seeNews">VER NOTÍCIAS <span>↗</span></a></div>
+    <div class="hero-art" role="img" aria-label="Campo de futebol iluminado"><div class="pitch-lines"></div><div class="hero-ball">⚽</div><div class="hero-caption">90' <span>+</span></div></div>
+  </section>
+  <section class="section-head" id="noticias"><div><span class="eyebrow" data-i18n="newsroom">REDAÇÃO FUT-7</span><h2 data-i18n="topStories">Notícias em destaque</h2></div><div class="tools"><input id="searchInput" type="search" placeholder="Pesquisar notícias…" data-i18n-placeholder="search"><select id="categoryFilter" aria-label="Filtrar categoria"><option value="all" data-i18n="all">Todas</option><option value="official">Oficial</option><option value="transfers">Transferências</option><option value="competitions">Competições</option></select></div></section>
+  <div id="status" class="status" role="status">A carregar notícias…</div>
+  <section id="newsGrid" class="news-grid" aria-live="polite"></section>
+  <section class="source-note"><strong data-i18n="sourceTitle">Transparência editorial</strong><p data-i18n="sourceText">As notícias importadas apresentam a fonte original. O FUT-7 não representa FIFA, UEFA ou qualquer clube. Confirma sempre os detalhes na publicação de origem.</p></section>
+  <section class="competitions" id="competicoes"><div><span class="eyebrow" data-i18n="follow">ACOMPANHA</span><h2 data-i18n="competitions">Competições</h2></div><div class="competition-list"><span>UEFA Champions League</span><span>Premier League</span><span>La Liga</span><span>Serie A</span><span>Bundesliga</span><span>Ligue 1</span><span>Futebol africano</span></div></section>
+  <section class="about" id="sobre"><span class="eyebrow">FUT-7</span><h2 data-i18n="aboutTitle">O futebol contado com clareza.</h2><p data-i18n="aboutText">Um portal independente para acompanhar o futebol. As fontes são identificadas e os conteúdos de terceiros são ligados às suas páginas originais.</p></section>
+</main>
+<footer><a class="brand" href="./">CHAPA <span>7</span></a><p>© <span id="year"></span> FUT-7 · <span data-i18n="rights">Todos os direitos reservados.</span></p><a href="mailto:contacto@exemplo.com" data-i18n="contact">Contacto</a></footer>
+<script src="app.js"></script>
+</body></html>
